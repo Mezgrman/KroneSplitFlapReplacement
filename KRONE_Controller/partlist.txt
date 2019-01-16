@@ -1,0 +1,10 @@
+Teileliste:
+- ATMega328
+- Keramik-Resonator 8 oder 16 MHz
+- Logic Level Triac
+- 2x Lichtschranke
+- MAX485
+- 2x Transistor für Lichtschranke
+- 6pol. ISP-Header
+- 6pol. IDC-Wannenstecker
+- 2pol. oder 4pol. Schraubklemmen
