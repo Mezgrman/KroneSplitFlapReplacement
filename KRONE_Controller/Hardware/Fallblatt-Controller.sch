@@ -37,8 +37,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "Fallblatt-Controller"
-Date "2017-09-25"
-Rev "v1.0"
+Date "2017-10-14"
+Rev "v1.1"
 Comp "xatLabs"
 Comment1 "Julian Metzler"
 Comment2 ""
@@ -283,7 +283,7 @@ F 5 "RC0603JR-07150R" H 11000 6800 60  0001 C CNN "Order No."
 	1    11000 6800
 	1    0    0    -1  
 $EndComp
-Text Notes 10950 6850 2    60   ~ 0
+Text Notes 11150 7250 2    60   ~ 0
 Nur beim letzten Modul
 $Comp
 L GND #PWR07
@@ -726,8 +726,6 @@ Wire Wire Line
 	11400 3850 11800 3850
 NoConn ~ 5900 6050
 NoConn ~ 5900 6150
-NoConn ~ 8500 6350
-NoConn ~ 8500 6450
 $Comp
 L C C2
 U 1 1 59B9C1B6
@@ -782,18 +780,6 @@ Wire Wire Line
 Wire Wire Line
 	12150 7100 12150 6950
 Connection ~ 11450 7100
-Text Label 11700 6400 0    60   ~ 0
-AUX1
-Wire Wire Line
-	11700 6400 11550 6400
-Wire Wire Line
-	11550 6400 11550 6550
-Text Label 11700 7200 0    60   ~ 0
-AUX2
-Wire Wire Line
-	11700 7200 11550 7200
-Wire Wire Line
-	11550 7200 11550 7050
 $Comp
 L R R4
 U 1 1 59B9F661
@@ -833,10 +819,6 @@ F 3 "" H 6900 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6900 3500
-Text Label 5900 5850 2    60   ~ 0
-AUX1
-Text Label 5900 5950 2    60   ~ 0
-AUX2
 $Comp
 L +5V #PWR018
 U 1 1 59BAB21D
@@ -892,4 +874,50 @@ Wire Wire Line
 	8650 6950 8650 6250
 Wire Wire Line
 	8650 6250 8500 6250
+$Comp
+L +5V #PWR?
+U 1 1 59E1DB0F
+P 5750 5800
+F 0 "#PWR?" H 5750 5650 50  0001 C CNN
+F 1 "+5V" H 5765 5973 50  0000 C CNN
+F 2 "" H 5750 5800 50  0000 C CNN
+F 3 "" H 5750 5800 50  0000 C CNN
+	1    5750 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59E1DB55
+P 5800 6200
+F 0 "#PWR?" H 5800 5950 50  0001 C CNN
+F 1 "GND" H 5805 6027 50  0000 C CNN
+F 2 "" H 5800 6200 50  0000 C CNN
+F 3 "" H 5800 6200 50  0000 C CNN
+	1    5800 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 6200 5800 5850
+Wire Wire Line
+	5800 5850 5900 5850
+Wire Wire Line
+	5750 5800 5750 5950
+Wire Wire Line
+	5750 5950 5900 5950
+Text Notes 6100 5700 0    60   ~ 0
+Diese beiden Pins sind KEINE IO-Pins!
+Wire Notes Line
+	6150 5700 6150 5800
+Wire Notes Line
+	10850 7150 10850 6800
+Wire Notes Line
+	10850 6800 10950 6800
+NoConn ~ 8500 6350
+NoConn ~ 8500 6450
+Wire Wire Line
+	11550 6550 11550 6500
+Connection ~ 11550 6500
+Wire Wire Line
+	11550 7050 11550 7100
+Connection ~ 11550 7100
 $EndSCHEMATC
