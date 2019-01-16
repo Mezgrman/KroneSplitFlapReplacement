@@ -1,35 +1,4 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:custom
-LIBS:switches
+EESchema Schematic File Version 4
 LIBS:Fallblatt-Controller-cache
 EELAYER 26 0
 EELAYER END
@@ -46,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ATMEGA328PB-AU U1
+L Fallblatt-Controller-rescue:ATMEGA328PB-AU U1
 U 1 1 59B9294F
 P 7200 5250
 F 0 "U1" H 7200 6928 50  0000 C CNN
@@ -59,7 +28,7 @@ F 5 "ATMEGA328P-AU" H 7200 5250 60  0001 C CNN "Order No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C1
+L Fallblatt-Controller-rescue:C C1
 U 1 1 59B92A56
 P 7500 3500
 F 0 "C1" V 7248 3500 50  0000 C CNN
@@ -72,7 +41,7 @@ F 5 "CL10B104KO8NNNC" H 7500 3500 60  0001 C CNN "Order No."
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR01
+L Fallblatt-Controller-rescue:GND #PWR01
 U 1 1 59B92DE7
 P 7800 3650
 F 0 "#PWR01" H 7800 3400 50  0001 C CNN
@@ -83,7 +52,7 @@ F 3 "" H 7800 3650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L Fallblatt-Controller-rescue:GND #PWR02
 U 1 1 59B92E7D
 P 7050 6950
 F 0 "#PWR02" H 7050 6700 50  0001 C CNN
@@ -95,7 +64,7 @@ F 3 "" H 7050 6950 50  0000 C CNN
 $EndComp
 NoConn ~ 5900 4350
 $Comp
-L MOC3081M Q1
+L Fallblatt-Controller-rescue:MOC3081M Q1
 U 1 1 59B92FF2
 P 9650 8250
 F 0 "Q1" H 9650 8665 50  0000 C CNN
@@ -108,7 +77,7 @@ F 5 "MOC3081XSM" H 9650 8250 60  0001 C CNN "Order No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L Fallblatt-Controller-rescue:R R3
 U 1 1 59B93227
 P 10250 8150
 F 0 "R3" V 10043 8150 50  0000 C CNN
@@ -121,7 +90,7 @@ F 5 "RC0603JR-0768R" H 10250 8150 60  0001 C CNN "Order No."
 	0    1    1    0   
 $EndComp
 $Comp
-L Q_TRIAC_AAG_Alternate D1
+L Fallblatt-Controller-rescue:Q_TRIAC_AAG_Alternate D1
 U 1 1 59B93616
 P 10650 8250
 F 0 "D1" H 10779 8296 50  0000 L CNN
@@ -134,7 +103,7 @@ F 5 "BT134W-600.135" H 10650 8250 60  0001 C CNN "Order No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P2
+L Fallblatt-Controller-rescue:CONN_01X02 P2
 U 1 1 59B938A0
 P 10700 7750
 F 0 "P2" V 10665 7612 50  0000 R CNN
@@ -147,7 +116,7 @@ F 5 "NXW-02SMDK" H 10700 7750 60  0001 C CNN "Order No."
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X02 P4
+L Fallblatt-Controller-rescue:CONN_01X02 P4
 U 1 1 59B93989
 P 11450 7750
 F 0 "P4" V 11415 7612 50  0000 R CNN
@@ -161,7 +130,7 @@ F 6 "TBW-5.0-K-2P" V 11450 7750 60  0001 C CNN "Accessory Order No."
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R2
+L Fallblatt-Controller-rescue:R R2
 U 1 1 59B93CD7
 P 9050 8150
 F 0 "R2" V 8843 8150 50  0000 C CNN
@@ -174,7 +143,7 @@ F 5 "RC0603JR-07180R" H 9050 8150 60  0001 C CNN "Order No."
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR03
+L Fallblatt-Controller-rescue:GND #PWR03
 U 1 1 59B93DD2
 P 9300 9050
 F 0 "#PWR03" H 9300 8800 50  0001 C CNN
@@ -185,7 +154,7 @@ F 3 "" H 9300 9050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_DIP_x08 SW1
+L Fallblatt-Controller-rescue:SW_DIP_x08 SW1
 U 1 1 59B940AE
 P 10400 5350
 F 0 "SW1" H 10400 6017 50  0000 C CNN
@@ -198,7 +167,7 @@ F 5 "ESD108E" H 10400 5350 60  0001 C CNN "Order No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L SP3481EN U2
+L Fallblatt-Controller-rescue:SP3481EN U2
 U 1 1 59B945C7
 P 9500 6800
 F 0 "U2" H 9900 7150 50  0000 C CNN
@@ -211,7 +180,7 @@ F 5 "#" H 9500 6800 60  0001 C CNN "Order No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R1
+L Fallblatt-Controller-rescue:R R1
 U 1 1 59B94CB8
 P 8750 5550
 F 0 "R1" V 8850 5550 50  0000 C CNN
@@ -224,7 +193,7 @@ F 5 "RC0603JR-0710K" H 8750 5550 60  0001 C CNN "Order No."
 	0    1    1    0   
 $EndComp
 $Comp
-L +5V #PWR04
+L Fallblatt-Controller-rescue:+5V #PWR04
 U 1 1 59B94DB6
 P 9000 5550
 F 0 "#PWR04" H 9000 5400 50  0001 C CNN
@@ -235,7 +204,7 @@ F 3 "" H 9000 5550 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L +5V #PWR05
+L Fallblatt-Controller-rescue:+5V #PWR05
 U 1 1 59B94F77
 P 9500 6300
 F 0 "#PWR05" H 9500 6150 50  0001 C CNN
@@ -246,7 +215,7 @@ F 3 "" H 9500 6300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR06
+L Fallblatt-Controller-rescue:GND #PWR06
 U 1 1 59B95060
 P 9500 7250
 F 0 "#PWR06" H 9500 7000 50  0001 C CNN
@@ -257,7 +226,7 @@ F 3 "" H 9500 7250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_02X03 P3
+L Fallblatt-Controller-rescue:CONN_02X03 P3
 U 1 1 59B95263
 P 11450 6800
 F 0 "P3" V 11496 6612 50  0000 R CNN
@@ -271,7 +240,7 @@ F 6 "T812-1-06" V 11450 6800 60  0001 C CNN "Accessory Order No."
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R5
+L Fallblatt-Controller-rescue:R R5
 U 1 1 59B955DC
 P 11000 6800
 F 0 "R5" H 11070 6846 50  0000 L CNN
@@ -286,7 +255,7 @@ $EndComp
 Text Notes 11150 7250 2    60   ~ 0
 Nur beim letzten Modul
 $Comp
-L GND #PWR07
+L Fallblatt-Controller-rescue:GND #PWR07
 U 1 1 59B95AE4
 P 10800 5800
 F 0 "#PWR07" H 10800 5550 50  0001 C CNN
@@ -297,7 +266,7 @@ F 3 "" H 10800 5800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR08
+L Fallblatt-Controller-rescue:+5V #PWR08
 U 1 1 59B96001
 P 11450 6450
 F 0 "#PWR08" H 11450 6300 50  0001 C CNN
@@ -308,7 +277,7 @@ F 3 "" H 11450 6450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR09
+L Fallblatt-Controller-rescue:GND #PWR09
 U 1 1 59B9608F
 P 11450 7150
 F 0 "#PWR09" H 11450 6900 50  0001 C CNN
@@ -319,7 +288,7 @@ F 3 "" H 11450 7150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Photointerrupter D3
+L Fallblatt-Controller-rescue:Photointerrupter D3
 U 1 1 59B97A7D
 P 12050 4550
 F 0 "D3" V 11999 4703 50  0000 L CNN
@@ -332,7 +301,7 @@ F 5 "#" H 12050 4550 60  0001 C CNN "Order No."
 	0    1    1    0   
 $EndComp
 $Comp
-L Photointerrupter D2
+L Fallblatt-Controller-rescue:Photointerrupter D2
 U 1 1 59B97BA1
 P 12050 3750
 F 0 "D2" V 11999 3903 50  0000 L CNN
@@ -345,7 +314,7 @@ F 5 "#" H 12050 3750 60  0001 C CNN "Order No."
 	0    1    1    0   
 $EndComp
 $Comp
-L CONN_02X03 P1
+L Fallblatt-Controller-rescue:CONN_02X03 P1
 U 1 1 59B97D07
 P 9100 3600
 F 0 "P1" H 9100 3915 50  0000 C CNN
@@ -358,9 +327,9 @@ F 5 "ZL301-2X20P" H 9100 3600 60  0001 C CNN "Order No."
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6900 3350 6900 3750
+	6900 3350 6900 3500
 Wire Wire Line
-	6900 3500 7350 3500
+	6900 3500 7100 3500
 Wire Wire Line
 	7100 3750 7100 3500
 Connection ~ 7100 3500
@@ -371,7 +340,7 @@ Wire Wire Line
 Wire Wire Line
 	7000 6750 7000 6950
 Wire Wire Line
-	7000 6950 7100 6950
+	7000 6950 7050 6950
 Wire Wire Line
 	7100 6950 7100 6750
 Connection ~ 7050 6950
@@ -386,7 +355,7 @@ Wire Wire Line
 Wire Wire Line
 	10450 8050 10650 8050
 Wire Wire Line
-	10650 7950 10650 8100
+	10650 7950 10650 8050
 Connection ~ 10650 8050
 Wire Wire Line
 	10750 7950 10750 8000
@@ -431,11 +400,11 @@ Wire Wire Line
 Wire Wire Line
 	9850 5550 10100 5550
 Wire Wire Line
-	8500 5550 8600 5550
+	8500 5550 8550 5550
 Wire Wire Line
 	9000 5550 8900 5550
 Wire Wire Line
-	9500 6300 9500 6400
+	9500 6300 9500 6350
 Wire Wire Line
 	9500 7250 9500 7200
 Wire Wire Line
@@ -453,7 +422,7 @@ Wire Wire Line
 Wire Wire Line
 	9100 6700 9050 6700
 Wire Wire Line
-	9050 6150 9050 6900
+	9050 6150 9050 6700
 Wire Wire Line
 	9050 6900 9100 6900
 Wire Wire Line
@@ -464,7 +433,7 @@ Wire Wire Line
 Wire Wire Line
 	10650 6700 10650 6500
 Wire Wire Line
-	10650 6500 11350 6500
+	10650 6500 11000 6500
 Wire Wire Line
 	11350 6500 11350 6550
 Wire Wire Line
@@ -472,7 +441,7 @@ Wire Wire Line
 Wire Wire Line
 	10650 6900 10650 7100
 Wire Wire Line
-	10650 7100 11350 7100
+	10650 7100 11000 7100
 Wire Wire Line
 	11350 7100 11350 7050
 Wire Wire Line
@@ -482,7 +451,7 @@ Wire Wire Line
 	11000 6950 11000 7100
 Connection ~ 11000 7100
 Wire Wire Line
-	10800 4950 10800 5800
+	10800 4950 10800 5050
 Wire Wire Line
 	10800 4950 10700 4950
 Wire Wire Line
@@ -507,9 +476,9 @@ Wire Wire Line
 	10700 5650 10800 5650
 Connection ~ 10800 5650
 Wire Wire Line
-	11450 6450 11450 6550
+	11450 6450 11450 6500
 Wire Wire Line
-	11450 7150 11450 7050
+	11450 7150 11450 7100
 Wire Wire Line
 	8850 3500 8650 3500
 Wire Wire Line
@@ -538,7 +507,7 @@ Wire Wire Line
 Wire Wire Line
 	9550 3600 9350 3600
 $Comp
-L +5V #PWR010
+L Fallblatt-Controller-rescue:+5V #PWR010
 U 1 1 59B9806A
 P 9450 3400
 F 0 "#PWR010" H 9450 3250 50  0001 C CNN
@@ -549,7 +518,7 @@ F 3 "" H 9450 3400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR011
+L Fallblatt-Controller-rescue:GND #PWR011
 U 1 1 59B9809E
 P 9450 3800
 F 0 "#PWR011" H 9450 3550 50  0001 C CNN
@@ -568,7 +537,7 @@ Wire Wire Line
 Wire Wire Line
 	9450 3500 9450 3400
 $Comp
-L Resonator Y1
+L Fallblatt-Controller-rescue:Resonator Y1
 U 1 1 59B98301
 P 9150 4700
 F 0 "Y1" V 9300 4350 50  0000 L CNN
@@ -597,7 +566,7 @@ Wire Wire Line
 Wire Wire Line
 	9150 4900 9150 4850
 $Comp
-L GND #PWR012
+L Fallblatt-Controller-rescue:GND #PWR012
 U 1 1 59B98495
 P 9400 4750
 F 0 "#PWR012" H 9400 4500 50  0001 C CNN
@@ -612,7 +581,7 @@ Wire Wire Line
 Wire Wire Line
 	9400 4700 9350 4700
 $Comp
-L BC817-40 Q2
+L Fallblatt-Controller-rescue:BC817-40 Q2
 U 1 1 59B98C79
 P 10850 3550
 F 0 "Q2" V 11086 3550 50  0000 C CNN
@@ -625,7 +594,7 @@ F 5 "BC817-40LT1G" H 10850 3550 60  0001 C CNN "Order No."
 	0    1    1    0   
 $EndComp
 $Comp
-L R R6
+L Fallblatt-Controller-rescue:R R6
 U 1 1 59B98F73
 P 11450 3650
 F 0 "R6" V 11243 3650 50  0000 C CNN
@@ -638,7 +607,7 @@ F 5 "RC0603JR-07180R" H 11450 3650 60  0001 C CNN "Order No."
 	0    1    1    0   
 $EndComp
 $Comp
-L R R7
+L Fallblatt-Controller-rescue:R R7
 U 1 1 59B997F7
 P 11450 4450
 F 0 "R7" V 11243 4450 50  0000 C CNN
@@ -651,14 +620,14 @@ F 5 "RC0603JR-07180R" H 11450 4450 60  0001 C CNN "Order No."
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	11050 3650 11300 3650
+	11050 3650 11200 3650
 Wire Wire Line
 	11200 3650 11200 4450
 Wire Wire Line
 	11200 4450 11300 4450
 Connection ~ 11200 3650
 $Comp
-L GND #PWR013
+L Fallblatt-Controller-rescue:GND #PWR013
 U 1 1 59B9A011
 P 10550 3750
 F 0 "#PWR013" H 10550 3500 50  0001 C CNN
@@ -673,7 +642,7 @@ Wire Wire Line
 Wire Wire Line
 	10550 3650 10650 3650
 $Comp
-L GND #PWR014
+L Fallblatt-Controller-rescue:GND #PWR014
 U 1 1 59B9A1BB
 P 11700 4950
 F 0 "#PWR014" H 11700 4700 50  0001 C CNN
@@ -688,14 +657,14 @@ Wire Wire Line
 Wire Wire Line
 	11600 4450 11800 4450
 Wire Wire Line
-	11700 4050 11700 4950
+	11700 4050 11700 4850
 Wire Wire Line
 	11700 4050 11800 4050
 Wire Wire Line
 	11800 4850 11700 4850
 Connection ~ 11700 4850
 $Comp
-L +5V #PWR015
+L Fallblatt-Controller-rescue:+5V #PWR015
 U 1 1 59B9AB61
 P 11650 3350
 F 0 "#PWR015" H 11650 3200 50  0001 C CNN
@@ -706,7 +675,7 @@ F 3 "" H 11650 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11650 3350 11650 4250
+	11650 3350 11650 3450
 Wire Wire Line
 	11650 4250 11800 4250
 Wire Wire Line
@@ -727,7 +696,7 @@ Wire Wire Line
 NoConn ~ 5900 6050
 NoConn ~ 5900 6150
 $Comp
-L C C2
+L Fallblatt-Controller-rescue:C C2
 U 1 1 59B9C1B6
 P 10200 6350
 F 0 "C2" V 9948 6350 50  0000 C CNN
@@ -743,7 +712,7 @@ Wire Wire Line
 	10050 6350 9500 6350
 Connection ~ 9500 6350
 $Comp
-L GND #PWR016
+L Fallblatt-Controller-rescue:GND #PWR016
 U 1 1 59B9C59E
 P 10400 6400
 F 0 "#PWR016" H 10400 6150 50  0001 C CNN
@@ -758,7 +727,7 @@ Wire Wire Line
 Wire Wire Line
 	10400 6350 10350 6350
 $Comp
-L CP C3
+L Fallblatt-Controller-rescue:CP C3
 U 1 1 59B9C7DF
 P 12150 6800
 F 0 "C3" H 12268 6846 50  0000 L CNN
@@ -771,17 +740,17 @@ F 5 "SC1C476M6L005VR" H 12150 6800 60  0001 C CNN "Order No."
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11450 6500 12150 6500
+	11450 6500 11550 6500
 Wire Wire Line
 	12150 6500 12150 6650
 Connection ~ 11450 6500
 Wire Wire Line
-	11450 7100 12150 7100
+	11450 7100 11550 7100
 Wire Wire Line
 	12150 7100 12150 6950
 Connection ~ 11450 7100
 $Comp
-L R R4
+L Fallblatt-Controller-rescue:R R4
 U 1 1 59B9F661
 P 10600 3250
 F 0 "R4" V 10393 3250 50  0000 C CNN
@@ -808,7 +777,7 @@ Wire Wire Line
 Wire Wire Line
 	10400 3250 10450 3250
 $Comp
-L +5V #PWR017
+L Fallblatt-Controller-rescue:+5V #PWR017
 U 1 1 59BA2DDB
 P 6900 3350
 F 0 "#PWR017" H 6900 3200 50  0001 C CNN
@@ -820,7 +789,7 @@ F 3 "" H 6900 3350 50  0000 C CNN
 $EndComp
 Connection ~ 6900 3500
 $Comp
-L +5V #PWR018
+L Fallblatt-Controller-rescue:+5V #PWR018
 U 1 1 59BAB21D
 P 8850 8100
 F 0 "#PWR018" H 8850 7950 50  0001 C CNN
@@ -835,7 +804,7 @@ Wire Wire Line
 Wire Wire Line
 	8850 8150 8900 8150
 $Comp
-L BC817-40 Q3
+L Fallblatt-Controller-rescue:BC817-40 Q3
 U 1 1 59BAB8EA
 P 9200 8750
 F 0 "Q3" V 9436 8750 50  0000 C CNN
@@ -850,7 +819,7 @@ $EndComp
 Wire Wire Line
 	9300 9050 9300 8950
 $Comp
-L R R8
+L Fallblatt-Controller-rescue:R R8
 U 1 1 59BAC036
 P 8750 8750
 F 0 "R8" V 8543 8750 50  0000 C CNN
@@ -875,7 +844,7 @@ Wire Wire Line
 Wire Wire Line
 	8650 6250 8500 6250
 $Comp
-L +5V #PWR?
+L Fallblatt-Controller-rescue:+5V #PWR?
 U 1 1 59E1DB0F
 P 5750 5800
 F 0 "#PWR?" H 5750 5650 50  0001 C CNN
@@ -886,7 +855,7 @@ F 3 "" H 5750 5800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L Fallblatt-Controller-rescue:GND #PWR?
 U 1 1 59E1DB55
 P 5800 6200
 F 0 "#PWR?" H 5800 5950 50  0001 C CNN
@@ -920,4 +889,50 @@ Connection ~ 11550 6500
 Wire Wire Line
 	11550 7050 11550 7100
 Connection ~ 11550 7100
+Wire Wire Line
+	7100 3500 7350 3500
+Wire Wire Line
+	7050 6950 7100 6950
+Wire Wire Line
+	10650 8050 10650 8100
+Wire Wire Line
+	9050 6700 9050 6900
+Wire Wire Line
+	11000 6500 11350 6500
+Wire Wire Line
+	11000 7100 11350 7100
+Wire Wire Line
+	10800 5050 10800 5150
+Wire Wire Line
+	10800 5150 10800 5250
+Wire Wire Line
+	10800 5250 10800 5350
+Wire Wire Line
+	10800 5350 10800 5450
+Wire Wire Line
+	10800 5450 10800 5550
+Wire Wire Line
+	10800 5550 10800 5650
+Wire Wire Line
+	10800 5650 10800 5800
+Wire Wire Line
+	8550 5550 8600 5550
+Wire Wire Line
+	11200 3650 11300 3650
+Wire Wire Line
+	11700 4850 11700 4950
+Wire Wire Line
+	11650 3450 11650 4250
+Wire Wire Line
+	9500 6350 9500 6400
+Wire Wire Line
+	11450 6500 11450 6550
+Wire Wire Line
+	11450 7100 11450 7050
+Wire Wire Line
+	6900 3500 6900 3750
+Wire Wire Line
+	11550 6500 12150 6500
+Wire Wire Line
+	11550 7100 12150 7100
 $EndSCHEMATC

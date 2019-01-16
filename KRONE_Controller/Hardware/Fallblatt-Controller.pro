@@ -1,6 +1,6 @@
-update=31.12.2018 18:51:31
+update=16.01.2019 23:22:59
 version=1
-last_client=eeschema
+last_client=kicad
 [pcbnew]
 version=1
 LastNetListRead=
